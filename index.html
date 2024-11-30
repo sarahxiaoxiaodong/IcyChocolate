@@ -1,0 +1,66 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>IcyChocolate Company</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+      </head>
+      <body>
+        <h1 id="title">IcyChocolate Survey Form</h1>
+        <p id="description">Thank you for your thoughtful responses! Your input will help us improve our services.</p>
+        <img src="ice-cream-cartoon.png" alt="pink ice cream" id="img">
+        <form id="survey-form">
+          <label id="name-label" for="name">Name</label></br>
+          <input id="name" type="text" placeholder="Enter your name" required></input>
+          </br>
+          </br><label id="email-label" for="email">Email</label></br>
+          <input id="email" type="email" placeholder="Enter your email" required></input>
+          </br>
+          </br><label id="number-label" for="number">Age (optional)</label></br>
+          <input id="number" type="number" placeholder="Age" min="13" max="122"></input>
+          </br>
+          </br><label>How often do you eat ice cream?<label></br>
+          <select id="dropdown" required>
+            <option>Please select one</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly or rarely</option>
+            <option>Never</option>
+          </select>
+          </br>
+          </br><label></label>What is your favorite ice cream flavor?</br>
+          <div>
+          <label for="vanila">
+          <input type="radio" value="vanila" name="flavor" id="vanila" class="inline" checked></input>Vanila
+          </label>
+          </br>
+          <label for="strawberry">
+          <input type="radio" value="strawberry" name="flavor" id="strawberry" class="inline" ></input>Strawberry
+          </label>
+          </br>
+          <label for="chocolate">
+          <input type="radio" value="chocolate" name="flavor" id="chocolate" class="inline"></input>Chocolate
+          </label>
+          </br>
+          <label for="other">
+          <input type="radio" value="other" name="flavor" id="other" class="inline"></input>Other
+          <label>
+          </br>
+          </br><label>What toppings do you like on your ice cream?</label>
+          <div>
+          <input type="checkbox" value="sprinkles"></input>Sprinkles
+          </br>
+          <input type="checkbox" value="oreos"></input>Oreos
+          </br>
+          <input type="checkbox" value="whipped-cream"></input>Whipped Cream
+          </br>
+          <input type="checkbox" value="other"></input>Other
+          </div>
+          </br><label>Comments and suggestions for new flavours?</label>
+          </br>
+          <textarea rows="10" cols="75" placeholder="Enter your comment here..."></textarea>
+          </br>
+          </br><input id="submit" type="submit">
+        </form>
+      </body>
+    </html>
